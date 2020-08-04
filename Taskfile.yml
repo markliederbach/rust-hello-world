@@ -1,19 +1,6 @@
 version: "2"
 
-tasks:
-  build:debug:
-    desc: Build a new executable from src
-    cmds:
-      - cargo build
-  build:release:
-    desc: Build a new executable for release from src
-    cmds:
-      - cargo build --release
-  check:
-    desc: Check for compilation errors without actually compiling
-    cmds:
-      - cargo check
-  run:
-    desc: Both build and run the executable
-    cmds:
-      - cargo run
+includes:
+  cargo: Taskfile-cargo.yml
+
+tasks: {}
