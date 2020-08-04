@@ -25,7 +25,7 @@ fn main() {
                     println!("You quitter!");
                     break;
                 };
-                eprintln!("Either enter a number or type 'quit' to exit");
+                eprintln!("Either enter a number (1->100) or type 'quit' to exit");
                 continue;
             }
         };
